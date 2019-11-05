@@ -4,6 +4,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -26,7 +27,6 @@
         <!--View Controller-->
         <scene sceneID="RP6-7p-6OZ">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="cmK-dK-ND8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController id="IHy-nb-es8" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="peb-tX-ezT">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -107,6 +107,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="kOw-Ui-cxi"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cmK-dK-ND8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="163.768115942029" y="121.875"/>
         </scene>
@@ -156,6 +157,9 @@
                                                     <state key="normal" title="Multimedia">
                                                         <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     </state>
+                                                    <connections>
+                                                        <segue destination="TXc-r9-Nfl" kind="show" id="daM-n5-8RV"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                         </tableViewCellContentView>
@@ -168,12 +172,15 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FDa-7y-bwa">
-                                                    <rect key="frame" x="20" y="3" width="112" height="36"/>
+                                                    <rect key="frame" x="20" y="3" width="54" height="36"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                    <state key="normal" title="Digital Cards">
+                                                    <state key="normal" title="Wallet">
                                                         <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     </state>
+                                                    <connections>
+                                                        <segue destination="WzD-mV-K7E" kind="show" id="gH6-hF-2wO"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                         </tableViewCellContentView>
@@ -284,6 +291,57 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qHw-v1-p6U" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1669.5652173913045" y="121.875"/>
+        </scene>
+        <!--Multimedia-->
+        <scene sceneID="D2c-3j-waj">
+            <objects>
+                <collectionViewController id="TXc-r9-Nfl" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="H7W-9w-hfV">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="GnG-M0-km4">
+                            <size key="itemSize" width="50" height="50"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="s3W-yf-Ggc">
+                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="7Mx-HF-01X">
+                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </collectionViewCellContentView>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="TXc-r9-Nfl" id="SZq-9m-Xou"/>
+                            <outlet property="delegate" destination="TXc-r9-Nfl" id="FRI-QI-ySf"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" title="Multimedia" id="rJe-ag-bKb"/>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1zt-6r-YnW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2335" y="124"/>
+        </scene>
+        <!--Wallet-->
+        <scene sceneID="Pln-YL-WZY">
+            <objects>
+                <viewController id="WzD-mV-K7E" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WaX-1J-xKJ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="839-kR-1Z7"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Wallet" id="TKT-w3-Eeq"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ezf-DK-cHy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2993" y="124"/>
         </scene>
     </scenes>
     <resources>
