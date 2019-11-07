@@ -15,7 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		9BE301592371F55D00E535AA /* Group H.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Group H.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9BE301592371F55D00E535AA /* Group F.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Group F.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BE3015C2371F55D00E535AA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9BE3015E2371F55D00E535AA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		9BE301632371F55D00E535AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -38,7 +38,7 @@
 		9BE301502371F55D00E535AA = {
 			isa = PBXGroup;
 			children = (
-				9BE3015B2371F55D00E535AA /* Group H */,
+				9BE3015B2371F55D00E535AA /* Group F */,
 				9BE3015A2371F55D00E535AA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -46,12 +46,12 @@
 		9BE3015A2371F55D00E535AA /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9BE301592371F55D00E535AA /* Group H.app */,
+				9BE301592371F55D00E535AA /* Group F.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		9BE3015B2371F55D00E535AA /* Group H */ = {
+		9BE3015B2371F55D00E535AA /* Group F */ = {
 			isa = PBXGroup;
 			children = (
 				9BE3015C2371F55D00E535AA /* AppDelegate.swift */,
@@ -61,15 +61,15 @@
 				9BE301672371F55D00E535AA /* LaunchScreen.storyboard */,
 				9BE3016A2371F55D00E535AA /* Info.plist */,
 			);
-			path = "Group H";
+			path = "Group F";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		9BE301582371F55D00E535AA /* Group H */ = {
+		9BE301582371F55D00E535AA /* Group F */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9BE3016D2371F55D00E535AA /* Build configuration list for PBXNativeTarget "Group H" */;
+			buildConfigurationList = 9BE3016D2371F55D00E535AA /* Build configuration list for PBXNativeTarget "Group F" */;
 			buildPhases = (
 				9BE301552371F55D00E535AA /* Sources */,
 				9BE301562371F55D00E535AA /* Frameworks */,
@@ -79,9 +79,9 @@
 			);
 			dependencies = (
 			);
-			name = "Group H";
+			name = "Group F";
 			productName = "Group H";
-			productReference = 9BE301592371F55D00E535AA /* Group H.app */;
+			productReference = 9BE301592371F55D00E535AA /* Group F.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -99,7 +99,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 9BE301542371F55D00E535AA /* Build configuration list for PBXProject "Group H" */;
+			buildConfigurationList = 9BE301542371F55D00E535AA /* Build configuration list for PBXProject "Group F" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -112,7 +112,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9BE301582371F55D00E535AA /* Group H */,
+				9BE301582371F55D00E535AA /* Group F */,
 			);
 		};
 /* End PBXProject section */
@@ -286,8 +286,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "Lambton.Group-H";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "Lambton.Group-F";
+				PRODUCT_NAME = "Group F";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -303,8 +303,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "Lambton.Group-H";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "Lambton.Group-F";
+				PRODUCT_NAME = "Group F";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -313,7 +313,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		9BE301542371F55D00E535AA /* Build configuration list for PBXProject "Group H" */ = {
+		9BE301542371F55D00E535AA /* Build configuration list for PBXProject "Group F" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9BE3016B2371F55D00E535AA /* Debug */,
@@ -322,7 +322,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9BE3016D2371F55D00E535AA /* Build configuration list for PBXNativeTarget "Group H" */ = {
+		9BE3016D2371F55D00E535AA /* Build configuration list for PBXNativeTarget "Group F" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9BE3016E2371F55D00E535AA /* Debug */,
