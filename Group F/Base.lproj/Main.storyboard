@@ -4,7 +4,6 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -130,7 +129,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9ux-yw-9js">
-                                                    <rect key="frame" x="20" y="5" width="94" height="36"/>
+                                                    <rect key="frame" x="20" y="0.0" width="394" height="41"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                     <state key="normal" title="Passwords">
@@ -151,14 +150,14 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mKB-i4-n8L">
-                                                    <rect key="frame" x="20" y="7" width="97" height="36"/>
+                                                    <rect key="frame" x="20" y="0.0" width="374" height="43"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                     <state key="normal" title="Multimedia">
                                                         <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     </state>
                                                     <connections>
-                                                        <segue destination="TXc-r9-Nfl" kind="show" id="daM-n5-8RV"/>
+                                                        <segue destination="oB6-oW-A9U" kind="show" id="6UP-fe-kNc"/>
                                                     </connections>
                                                 </button>
                                             </subviews>
@@ -172,7 +171,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FDa-7y-bwa">
-                                                    <rect key="frame" x="20" y="3" width="54" height="36"/>
+                                                    <rect key="frame" x="20" y="0.0" width="374" height="39"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                     <state key="normal" title="Wallet">
@@ -193,7 +192,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xG5-qf-FkS">
-                                                    <rect key="frame" x="20" y="7" width="52" height="36"/>
+                                                    <rect key="frame" x="20" y="0.0" width="374" height="43"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                     <state key="normal" title="Notes">
@@ -218,7 +217,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3LL-nY-H8R" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="900" y="122"/>
+            <point key="canvasLocation" x="900.00000000000011" y="121.875"/>
         </scene>
         <!--Passwords-->
         <scene sceneID="PcV-lu-w6o">
@@ -278,39 +277,20 @@
             <point key="canvasLocation" x="1669.5652173913045" y="121.875"/>
         </scene>
         <!--Multimedia-->
-        <scene sceneID="D2c-3j-waj">
+        <scene sceneID="Efh-42-eRL">
             <objects>
-                <collectionViewController id="TXc-r9-Nfl" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="H7W-9w-hfV">
+                <viewController id="oB6-oW-A9U" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UIZ-I7-a0v">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="GnG-M0-km4">
-                            <size key="itemSize" width="50" height="50"/>
-                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                        </collectionViewFlowLayout>
-                        <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="s3W-yf-Ggc">
-                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="7Mx-HF-01X">
-                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </collectionViewCellContentView>
-                            </collectionViewCell>
-                        </cells>
-                        <connections>
-                            <outlet property="dataSource" destination="TXc-r9-Nfl" id="SZq-9m-Xou"/>
-                            <outlet property="delegate" destination="TXc-r9-Nfl" id="FRI-QI-ySf"/>
-                        </connections>
-                    </collectionView>
-                    <navigationItem key="navigationItem" title="Multimedia" id="rJe-ag-bKb"/>
-                </collectionViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="1zt-6r-YnW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                        <viewLayoutGuide key="safeArea" id="6jz-gk-T75"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Multimedia" id="wZy-G8-0vf"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="r08-sC-JFZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2335" y="124"/>
+            <point key="canvasLocation" x="2331" y="121"/>
         </scene>
         <!--Wallet-->
         <scene sceneID="Pln-YL-WZY">
