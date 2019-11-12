@@ -285,18 +285,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="kpi-YK-pGT">
-                                <rect key="frame" x="20" y="98" width="374" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="kpi-YK-pGT">
+                                <rect key="frame" x="20" y="103" width="374" height="32"/>
                                 <segments>
                                     <segment title="Photos"/>
                                     <segment title="Videos"/>
                                     <segment title="Audios"/>
                                 </segments>
                             </segmentedControl>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="xcW-gY-biW">
-                                <rect key="frame" x="20" y="145" width="374" height="717"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="xcW-gY-biW">
+                                <rect key="frame" x="20" y="154" width="374" height="713"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="QJ8-2M-Lcp">
                                     <size key="itemSize" width="50" height="50"/>
@@ -317,6 +315,15 @@
                             </collectionView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6jz-gk-T75" firstAttribute="trailing" secondItem="kpi-YK-pGT" secondAttribute="trailing" constant="20" id="4Xi-MI-Jna"/>
+                            <constraint firstItem="xcW-gY-biW" firstAttribute="top" secondItem="kpi-YK-pGT" secondAttribute="bottom" constant="20" id="9Jt-R0-6SI"/>
+                            <constraint firstItem="kpi-YK-pGT" firstAttribute="leading" secondItem="6jz-gk-T75" secondAttribute="leading" constant="20" id="H5r-8G-JVJ"/>
+                            <constraint firstItem="kpi-YK-pGT" firstAttribute="top" secondItem="6jz-gk-T75" secondAttribute="top" constant="15" id="NEk-DW-W0c"/>
+                            <constraint firstItem="6jz-gk-T75" firstAttribute="trailing" secondItem="xcW-gY-biW" secondAttribute="trailing" constant="20" id="QGv-D0-QHf"/>
+                            <constraint firstItem="xcW-gY-biW" firstAttribute="leading" secondItem="6jz-gk-T75" secondAttribute="leading" constant="20" id="Y8Y-kA-b2s"/>
+                            <constraint firstItem="xcW-gY-biW" firstAttribute="bottom" secondItem="6jz-gk-T75" secondAttribute="bottom" constant="5" id="lQN-kz-eMU"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6jz-gk-T75"/>
                     </view>
                     <navigationItem key="navigationItem" title="Multimedia" id="wZy-G8-0vf"/>
