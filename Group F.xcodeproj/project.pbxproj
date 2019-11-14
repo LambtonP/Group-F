@@ -73,9 +73,9 @@
 		9BE3015B2371F55D00E535AA /* Group F */ = {
 			isa = PBXGroup;
 			children = (
-				9BD96A12237DE2C1008DB7CD /* View Controllers */,
 				9BE3015C2371F55D00E535AA /* AppDelegate.swift */,
 				9BE3015E2371F55D00E535AA /* SceneDelegate.swift */,
+				9BD96A12237DE2C1008DB7CD /* View Controllers */,
 				9BE301622371F55D00E535AA /* Main.storyboard */,
 				9BE301652371F55D00E535AA /* Assets.xcassets */,
 				9BE301672371F55D00E535AA /* LaunchScreen.storyboard */,
