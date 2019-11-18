@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9BB8EBB5238328FB00BC10BB /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB8EBB4238328FB00BC10BB /* Utilities.swift */; };
+		9BB8EBB72383305800BC10BB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9BB8EBB62383305800BC10BB /* GoogleService-Info.plist */; };
 		9BD96A0D237DE263008DB7CD /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD96A0C237DE263008DB7CD /* SignUpViewController.swift */; };
 		9BD96A0F237DE292008DB7CD /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD96A0E237DE292008DB7CD /* LoginViewController.swift */; };
 		9BD96A11237DE2AD008DB7CD /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD96A10237DE2AD008DB7CD /* HomeViewController.swift */; };
@@ -19,6 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9BB8EBB4238328FB00BC10BB /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		9BB8EBB62383305800BC10BB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		9BD96A0C237DE263008DB7CD /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		9BD96A0E237DE292008DB7CD /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		9BD96A10237DE2AD008DB7CD /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -75,11 +79,13 @@
 			children = (
 				9BE3015C2371F55D00E535AA /* AppDelegate.swift */,
 				9BE3015E2371F55D00E535AA /* SceneDelegate.swift */,
+				9BB8EBB4238328FB00BC10BB /* Utilities.swift */,
 				9BD96A12237DE2C1008DB7CD /* View Controllers */,
 				9BE301622371F55D00E535AA /* Main.storyboard */,
 				9BE301652371F55D00E535AA /* Assets.xcassets */,
 				9BE301672371F55D00E535AA /* LaunchScreen.storyboard */,
 				9BE3016A2371F55D00E535AA /* Info.plist */,
+				9BB8EBB62383305800BC10BB /* GoogleService-Info.plist */,
 			);
 			path = "Group F";
 			sourceTree = "<group>";
@@ -143,6 +149,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9BE301692371F55D00E535AA /* LaunchScreen.storyboard in Resources */,
+				9BB8EBB72383305800BC10BB /* GoogleService-Info.plist in Resources */,
 				9BE301662371F55D00E535AA /* Assets.xcassets in Resources */,
 				9BE301642371F55D00E535AA /* Main.storyboard in Resources */,
 			);
@@ -157,6 +164,7 @@
 			files = (
 				9BD96A14237DE2FE008DB7CD /* ViewController.swift in Sources */,
 				9BD96A11237DE2AD008DB7CD /* HomeViewController.swift in Sources */,
+				9BB8EBB5238328FB00BC10BB /* Utilities.swift in Sources */,
 				9BD96A0F237DE292008DB7CD /* LoginViewController.swift in Sources */,
 				9BD96A0D237DE263008DB7CD /* SignUpViewController.swift in Sources */,
 				9BE3015D2371F55D00E535AA /* AppDelegate.swift in Sources */,

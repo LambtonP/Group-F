@@ -20,8 +20,20 @@ class LoginViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        setUpElements ()
     }
     
+    func setUpElements () {
+        
+        // Hide Elements
+        messageLabel.alpha = 0
+        
+        // Style Elements
+        Utilities.styleTextField(emailTextField)
+        Utilities.styleTextField(passwordTextField)
+        Utilities.styleFilledButton(loginButton)
+    }
 
     /*
     // MARK: - Navigation
