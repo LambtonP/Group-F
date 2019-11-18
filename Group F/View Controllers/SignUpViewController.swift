@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseAuth
 
 class SignUpViewController: UIViewController {
 
@@ -39,19 +41,63 @@ class SignUpViewController: UIViewController {
        
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+// Check the fields and validate that the data is correct. If everything is correct, this method returns nil. Otherwise, it returs the error messages
+    
+    func validateFields() -> String? {
+        
+        // Check that all fields are filled in
+        if firstNameTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
+            lastNameTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
+            emailTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
+            passwordTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" {
+                    return "Please fill in required fields."
+        }
+        
+        // Check if password is secure
+        let cleanedPassword = passwordTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+        if Utilities.isPasswordValid(cleanedPassword) == false {
+            // Password isn't secure enough
+            
+            return " Please make sure your password is at least 8 characters, contains a special character and a number."
+        }
+        return nil
+        
     }
-    */
     
     @IBAction func signUpTapped(_ sender: Any) {
+        
+        // Validate the Fields
+        let error = validateFields()
+        
+        if error != nil {
+            //There's something wrong with fields, show error message
+            showError(error!)
+        }
+        else {
+            
+        // Create User
+            Auth.auth().createUser(withEmail: "", password: "") { (result, err) in
+                
+                //check for errors
+                if err != nil {
+                    
+                    // There was an error creating the user
+                    self.showError("Error Creating User")
+            }
+            else {
+                    
+                // User was Created Succesfully, now store the first name and last name
+                    let db = Firestore.firestore()
+                }
+            }
+        
+        // Transition to the home screen
+        }
+        
     }
     
-
+    func showError(_ message:String) {
+        messageLabel.text = message
+        messageLabel.alpha = 1
+    }
 }
